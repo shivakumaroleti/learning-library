@@ -73,7 +73,7 @@ We are going to avoid the _blank canvas syndrome_  using **Explain**. Explain us
        - **_Anomalies_** insights based on the aggregation rule
 
     2.1 In Data Pane Select **# VALUE**, Right-Click and select **Explain VALUE**  
-    ![Explain Value](./images/explainvalue.png)
+    ![Explain Value](./images/explainvalue.png)  
     Explain displays its findings to you as text descriptions and visualizations. You can select key visualizations and add them to your project's canvas.
 
     2.2 A new page is opened. Explain on metric provides basic facts and anomalies based on aggregation rule  
