@@ -63,7 +63,8 @@ in the top right hand side of your screen. If your username is shown as:
     >
     >**Feature Set**: Enterprise Analytics (important)
     >
-    >**Capacity**: 2
+    >**Capacity**: 2  
+       > **Important**: **1 OCPU OAC instance is for Trials Only**; you cannot scale up an 1 OCPU instance once need it, and also the shape you chose comes with [Limits for Querying, Displaying, Exporting Data](https://docs.oracle.com/en/cloud/paas/analytics-cloud/acsom/create-services-oracle-analytics-cloud.html#GUID-164D8568-9AE3-4A74-9F1A-0D87B78713C9) => **DO NOT create an 1 OCPU instance for OAC Production environment**
     >
     >**License Type**: "Subscribe to a new Analytics Cloud software > license and the Analytics Cloud." (You will use this service as part of the free Oracle Cloud trial that you requested for this workshop).
 
