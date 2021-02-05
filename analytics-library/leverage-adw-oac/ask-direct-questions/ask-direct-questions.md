@@ -1,30 +1,31 @@
 # Asking Direct Questions on Data
 
-![BI ASK](./images/biask0small.png)
-
 ## Introduction
 
-When creating a **Project** out of a **Data Set**, you'll see a blank canvas.  
-This time we are going to avoid _blank canvas syndrome_  using **BI Ask**, which is the search bar on the Home page to find the data and quickly visualize it.
+When create a **Project** out of a **Data Set**, you see a blank canvas at first.  
+You avoid _blank canvas syndrome_  using **BI Ask** to find the data and quickly visualize it.  
+Tjat's the _**Search Bar**_ on the _**OAC Home page**_.
 
 **BI Ask** (**N**atural **L**anguage **Q**uery **P**rocessing) promotes direct interactions between the users and the BI System to explicitly understand what every user is interested in.  
-Interprets semantic layer, user private data, expression library and catalog artifacts and generates on-the-fly queries – visualizations.
+It interprets semantic layer, user private data, expression library and catalog artifacts and generates on-the-fly queries – visualizations.
 
-    Estimated Lab Time: 40 minutes
+_Estimated Lab Time:_ 40 minutes
+
+![BI ASK](./images/biask0small.png)
 
 ### Objectives
 
-- **Use BI Ask to ask (or type) direct questions (Natural Language) on data - desktop/laptop**
-- **Use BI Ask to ask direct questions (Natural Language) on data - mobil (Day by Day)**
-- **Troubleshoot and Fine-Tune Searches**
+- Use BI Ask to ask (or type) direct questions (Natural Language) on data - desktop/laptop
+- Use BI Ask to ask direct questions (Natural Language) on data - mobil (Day by Day)
+- Troubleshoot and Fine-Tune Searches
 
 ### Prerequisites
 
 - An Oracle Cloud Free Tier or Paid
 - You have completed  
-["Lab 1: Provisioning your Autonomous Database instance"]("../../provision-adw/provision-adw.md")  
-["Lab 2: Provisioning your Oracle Analytics Cloud instance"]("../../provision-oac/provision-oac.md")  
-["Lab 3: Connecting OAC to ADW and adjusting Data Set properties"]("../../a-connoactoadw/a-connoactoadw.md")
+   Lab 1: Provisioning your Autonomous Database instance  
+   Lab 2: Provisioning your Oracle Analytics Cloud instance  
+   Lab 3: Connecting OAC to ADW and adjusting Data Set properties
 
 ## **STEP 1**: Certify and Index your Data Set
 
@@ -34,34 +35,34 @@ Interprets semantic layer, user private data, expression library and catalog art
     > Note: English it's just an example, more languages are supported 
 
     1.1 In the **Oracle Analytics Home** page, click the **Navigator** on top left, and then click **Data**  
-    > Note: if you are still on the previous lab, you can quickly Go Back ![Go Back](../c-askdirectquestions/images/biaskgoback.png) to the **Home** page without saving the project  
-    ![Data](../c-askdirectquestions/images/biaskconsoledata.png)
+    > Note: if you are still on the previous lab, you can quickly Go Back ![Go Back](../ask-direct-questions/images/biaskgoback.png) to the **Home** page without saving the project  
+    ![Data](../ask-direct-questions/images/biaskconsoledata.png)
 
     1.2 Select your Data Set.  
     From **Data** page, then **Data Sets** section identify **DCA_SALES_DATA** Data Set.
 
     1.3 Click the **Actions menu** of the data set or right-click the Data Set, and click **Inspect**  
-    ![Data Set](../c-askdirectquestions/images/dataset.png)
-    ![Inspect](../c-askdirectquestions/images/datasetinspectsmall.png)
+    ![Data Set](../ask-direct-questions/images/dataset.png)
+    ![Inspect](../ask-direct-questions/images/datasetinspectsmall.png)
 
     1.4 **Certify** the Data Set  
     From **General** tab click **Certify** button  
-    ![Certify](../c-askdirectquestions/images/datasetcertify.png)
+    ![Certify](../ask-direct-questions/images/datasetcertify.png)
 
     1.5 **Index** the Data Set  
     From **Search** tab click **Index Data Set for Searching**  
-    ![Idex](../c-askdirectquestions/images/datasetindex.png)
+    ![Idex](../ask-direct-questions/images/datasetindex.png)
 
     1.6 **Control access** (optional)  
     Access to the Data Sets can be controlled from **Access** tab  
-    ![Control](../c-askdirectquestions/images/datasetcontrol.png)  
+    ![Control](../ask-direct-questions/images/datasetcontrol.png)  
     > Note: is best practice to enforce control using **Roles** rather than individual **Users**
 
     Click **Save** and then **Close** button.
 
     1.7 Go to **Home** Page
     Click **Navigator** and then select **Home**  
-    ![Home Page](../c-askdirectquestions/images/navigatorhome.png)
+    ![Home Page](../ask-direct-questions/images/navigatorhome.png)
 
 ## **STEP 2**: Ask Questions about your data
 
@@ -73,27 +74,27 @@ Interprets semantic layer, user private data, expression library and catalog art
     As you enter the information, the application returns search results in a drop-down list. The system can be searched by column names or data elements or both. Best fit results are returned immediately
 
     1.2  Press **SHIFT + ENTER** to visualize data  
-    ![Visualize Data](../c-askdirectquestions/images/biask.png)
+    ![Visualize Data](../ask-direct-questions/images/biask.png)
 
     1.3 Check the results. Insights are rendered immediately from the best matching Data Set  
-    ![Visualize Data](../c-askdirectquestions/images/biask1.png)
+    ![Visualize Data](../ask-direct-questions/images/biask1.png)
 
     1.4 Continue to type in the bar area "**for customers**" and press **SHIFT + ENTER**  
-    ![Visualize Data](../c-askdirectquestions/images/biask2.png)
+    ![Visualize Data](../ask-direct-questions/images/biask2.png)
     We observe that we are losing customers over time
 
     1.4 Continue to type in the bar area "**for direct channel**" and press **SHIFT + ENTER**  
-    ![Visualize Data](../c-askdirectquestions/images/biask3.png)
+    ![Visualize Data](../ask-direct-questions/images/biask3.png)
 
     1.5 Remove the last query.  
-    Select  "**for direct channel**" and press the x (remove) sign ![Remove Data](../c-askdirectquestions/images/biask4a.png)
+    Select  "**for direct channel**" and press the x (remove) sign ![Remove Data](../ask-direct-questions/images/biask4a.png)
 
     1.6 Continue to type in the bar area "**by channel**" and press **SHIFT + ENTER**  
-    ![Visualize Data](../c-askdirectquestions/images/biask5.png)
+    ![Visualize Data](../ask-direct-questions/images/biask5.png)
 
     1.7 You have 9 visuals to start with. You can always choose one (or more) and explore it.  
-    > Note: optional you can select the first visual, hover over the top left of the visual and choose **Explore as Project** ![Visualize Data](../c-askdirectquestions/images/biaskexploreasproject0.png)  
-    ![Visualize Data](../c-askdirectquestions/images/biaskexploreasprojectsmall.png)
+    > Note: optional you can select the first visual, hover over the top left of the visual and choose **Explore as Project** ![Visualize Data](../ask-direct-questions/images/biaskexploreasproject0.png)  
+    ![Visualize Data](../ask-direct-questions/images/biaskexploreasprojectsmall.png)
 
 2. ### Day by Day
 
@@ -115,7 +116,7 @@ Interprets semantic layer, user private data, expression library and catalog art
    **2.1 Prerequisites**  
       **2.1.1 Apps prerequisites**: Install Day by Day  
       - Search for "**Oracle Day by Day**" app with Google Play or App Store  
-      ![Google Play](../c-askdirectquestions/images/daybydayplaystoresmall.png)  
+      ![Google Play](../ask-direct-questions/images/daybydayplaystoresmall.png)  
       - Install Day by Day is nothing different from installing any of your casual mobile apps.  
       - Don’t deny apps permissions right from the start; you can always go to your mobile app settings and work on permissions, if necessary.
 
@@ -124,30 +125,30 @@ Interprets semantic layer, user private data, expression library and catalog art
          > Note: that's enough for our lab, but in a full enterprise environment you should also [Enable Data Model and Catalog Crawl](https://docs.oracle.com/en/cloud/paas/analytics-cloud/acabi/manage-how-content-is-indexed-and-searched.html#GUID-64DDEF84-75B8-4D0D-A625-17E9538435F0) for your User
 
      - In the **Oracle Analytics Home** page, click the **Navigator** on top left, and then click **Console**  
-     ![Console](../c-askdirectquestions/images/biaskconsole.png)
+     ![Console](../ask-direct-questions/images/biaskconsole.png)
 
      - From **Configuration** and Administration click **Users and Roles**
       > Note: a new browser page is opening
 
-      ![Console](../c-askdirectquestions/images/biaskuserssmall.png)
+      ![Console](../ask-direct-questions/images/biaskuserssmall.png)
 
-     - From **Application Role Management** search for your **User** in the search box upper right, then click on **Manage Application Role** ![Console](../c-askdirectquestions/images/biaskuserrole2.png)  
-     ![Console](../c-askdirectquestions/images/biaskuserrole.png)
+     - From **Application Role Management** search for your **User** in the search box upper right, then click on **Manage Application Role** ![Console](../ask-direct-questions/images/biaskuserrole2.png)  
+     ![Console](../ask-direct-questions/images/biaskuserrole.png)
 
      - From **Manage Roles** click **Search** button and see **Available Applications Roles**  
        > if you already have **BIService Administrator** role you are OK  
        > you double-click on **BI Content Author** and a **DV Consumer Role** to move it from the left side to the right side if necessary  
        Click **OK** button.  
-       ![Console](../c-askdirectquestions/images/biaskuserrole3.png)
+       ![Console](../ask-direct-questions/images/biaskuserrole3.png)
 
      - Close the new opened browser page, return to the **Console**, click on **Navigator** and select **Home Page**  
-     ![Console](../c-askdirectquestions/images/biaskhomepage.png)
+     ![Console](../ask-direct-questions/images/biaskhomepage.png)
 
     **2.2 Connect to your OAC instance**  
     The prerequisites are met, so it's time to connect your mobile to your OAC instance  
     - Enter your **Instance details**: (https<nolink>://name-tenency.analytics.ocp.oraclecloud.com)  
     - Enter your ** OAC login User Name** and **Password**; if you have enabled SSO in OAC, you have to set up [OAuth](https://docs.oracle.com/en/cloud/paas/analytics-cloud/biday/basics.html#GUID-4AE4B43-56F4-4DAC-8FF1-5FC4B5DE5BB)  
-    ![Console](../c-askdirectquestions/images/daybydaylogin.png)
+    ![Console](../ask-direct-questions/images/daybydaylogin.png)
 
     **2.3 Ask your question**.  
     You can simply speak or type in plain English questions, which gets directed to your data set
@@ -163,17 +164,17 @@ Interprets semantic layer, user private data, expression library and catalog art
        3. Personal data sets  
        4. Catalog items (projects, analyses, dashboards, and reports)
 
-      ![Speak](../c-askdirectquestions/images/daybydaysearch3.png)
+      ![Speak](../ask-direct-questions/images/daybydaysearch3.png)
 
     **2.4 Add visuals to your feeb**.  
     Interesting visuals can be added to daily feeds. The daily feeds appear on the Home screen when the user logs in every time.  
     Choose two visuals, click on the 3 dots and select **Add to Your Feed**  
-    ![Speak](../c-askdirectquestions/images/daybydayaddfeed.png)
+    ![Speak](../ask-direct-questions/images/daybydayaddfeed.png)
 
     **2.5 Comment**.  
     Choose a visual, click on the 3 dots and select **Comments**. Speak or type “**Please review ASAP**”  
-    ![Comment](../c-askdirectquestions/images/daybydaycomment.png)
-      > Note: see “**1 comment**” ![Comment](../c-askdirectquestions/images/daybydaycomment1small.png) at the bottom of the feed
+    ![Comment](../ask-direct-questions/images/daybydaycomment.png)
+      > Note: see “**1 comment**” ![Comment](../ask-direct-questions/images/daybydaycomment1small.png) at the bottom of the feed
 
 ## **STEP 3**: Troubleshoot and Fine-Tune Searches
 
@@ -267,10 +268,11 @@ If the app can’t connect to the server, then:
    **7.8 Ensure** that the administrator has **Certified the Data Sets** that users need to find
 
 You have just finished to learn how to ask direct questions to your data using **BI Ask** in both desktop and mobile flavour as well as basic troubleshooting and index tips.  
-> Optional: you can check in the next [video](https://youtu.be/uEESc7yo6kA) how BI Ask engine works with OAC DV and Day by Day in a side by side comparison  
+> Optional: you can check in the next [video](https://youtu.be/uEESc7yo6kA) how BI Ask engine works with OAC DV and Day by Day in a side by side comparison 
+
 [](youtube:uEESc7yo6kA)
 
-**This concludes this lab. Please proceed to the next lab in the Content menu.**
+You may now [proceed to the next lab](#next)
 
 ## Want to Learn More?
 

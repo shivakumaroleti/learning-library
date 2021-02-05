@@ -1,5 +1,5 @@
 {
-  "workshoptitle": "Setting up a Departmental Data Warehouse with ADW and OAC",
+  "workshoptitle": "Leveraging Oracle Analytics Cloud with Oracle Autonomous Data Warehouse",
   "tutorials": [
     {
       "title": "Prerequisites",
@@ -19,23 +19,23 @@
     },
     {
       "title": "Lab 3: Connecting OAC to ADW and adjusting Data Set properties",
-      "filename": "../../a-connoactoadw.md"
+      "filename": "../../connect-oac-adw/connect-oac-adw.md"
     },
 	{
       "title": "Lab 4: Immediate basic insights on data",
-      "filename": "../../b-immediateinsights.md"
+      "filename": "../../immediate-insights/immediate-insights.md"
     },
 	{
       "title": "Lab 5: Asking direct questions on data",
-      "filename": "../../c-askdirectquestions.md"
+      "filename": "../../ask-direct-questions/ask-direct-questions.md"
     },
 	{
       "title": "Lab 6: Gaining insights with visual data dialog",
-      "filename": "../../d-gaininsigt.md"
+      "filename": "../../gain-insights/gain-insights.md"
     },
 	{
       "title": "Lab 7: Monitoring and Ad-hoc scaling up ADW activity for optimal OAC experience",
-      "filename": "../../e-monitoradw.md"
+      "filename": "../../monitor-adw/monitor-adw.md"
     },
     {
       "title": "Next Steps",

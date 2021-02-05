@@ -81,7 +81,7 @@ in the top right hand side of your screen. If your username is shown as:
 ![OAC Instance Active](./images/lab200_8a.png)
 
 
-**This concludes this lab. Please proceed to the next lab in the Content menu.**
+You may now [proceed to the next lab](#next)
 
 ## **Acknowledgements**
 

@@ -1,34 +1,36 @@
-# Immediate Basic Insights on Data 
-
-![Explain](./images/explain0.png)
+# Immediate Basic Insights on Data
 
 ## Introduction
 
 When creating a Project out of a Data Set, you'll see a blank canvas.  
 We are going to avoid the _blank canvas syndrome_  using **Explain**. Explain uses machine learning (**ML**) to find useful insights about your data. 
 
-    Estimated Lab Time: 25 minutes
+Estimated Lab Time: 25 minutes
+
+![Explain](./images/explain0.png)
 
 ### Objectives
 
-- **Use Explain to get immediate basic insights on data**
+- Use Explain to get immediate basic insights on data
 
 ### Prerequisites  
+
 * An Oracle Cloud Free Tier or Paid
 * You have completed  
-  ["Lab 1: Provisioning your Autonomous Database instance"]("../../provision-adw/provision-adw.md")  
-  ["Lab 2: Provisioning your Oracle Analytics Cloud instance"]("../../provision-oac/provision-oac.md")  
-  ["Lab 3: Connecting OAC to ADW and adjusting Data Set properties"]("../../a-connoactoadw/a-connoactoadw.md")
+  Lab 1: Provisioning your Autonomous Database instance  
+  Lab 2: Provisioning your Oracle Analytics Cloud instance  
+  Lab 3: Connecting OAC to ADW and adjusting Data Set properties
 
 ## **STEP 1**: Create a Project
 
 1. ### Create your first Project
+
     After you have applied the [starter file script](files/starter-file.sql) and run the SQL code with ["Lab 2: Provisioning your Oracle Analytics Cloud instance"]("../../provision-oac/provision-oac.md"), you can quickly **create** your **Project**.  
     Go to top right and click **Create Project** button.
-    ![Create Project](../b-immediateinsights/images/createproject.png)
+    ![Create Project](../immediate-insights/images/createproject.png)
 
     An empty **Canvas** is presented in **Visualization** tab  
-    ![Create Project](../b-immediateinsights/images/blankcanvas.png)    
+    ![Create Project](../immediate-insights/images/blankcanvas.png)    
 
     Before drowning into details, let us give you a quick **explanation** of the different parts of this screen. This will help you to easily follow the next steps.
 
@@ -100,7 +102,7 @@ We are going to avoid the _blank canvas syndrome_  using **Explain**. Explain us
 
 You have just finished to explore **Explain** **ML** feature, which enable insights that you can immediately start with, instead of a blank canvas.
 
-**This concludes this lab. Please proceed to the next lab in the Content menu.**
+You may now [proceed to the next lab](#next)
 
 ## Want to Learn More? 
 - Free [Udemy: Modern Data Visualization with Oracle Analytics Cloud](https://www.udemy.com/augmented-analytics/), Section 4, Topic 28. Augumented Analysis using Explain Feature

@@ -64,9 +64,9 @@ Estimated Lab Time: 15 minutes
     > **Always Free:** Off
 ---
    > **Not recommended for this lab**, but you can select Always Free configuration to start enjoying your Free Autonomous Database.  
-   With Free you cannot scale the database so you'll not be able to follow all the labs from this workshop.
-   You will have see the Always Free logo next to the name of your database: ![Always Free Logo](./images/always_free_logo.png)  
-   [If you select 'Always Free Tier On', please check the following link](https://www.oracle.com/uk/cloud/free/#always-free).
+     With Free you cannot scale the database so you'll not be able to follow all the labs from this workshop.
+    You will have see the Always Free logo next to the name of your database: ![Always Free Logo](./images/always_free_logo.png)  
+    [If you select 'Always Free Tier On', please check the following link](https://www.oracle.com/uk/cloud/free/#always-free).
 ---
    ![ADB Creation Details](./images/lab100_3a.png)
 
@@ -117,7 +117,7 @@ Estimated Lab Time: 15 minutes
 
 You have just created an Autonomous Database with the latest features of Oracle Databases.
 
-**This concludes this lab. Please proceed to the next lab in the Content menu.**
+You may now [proceed to the next lab](#next)
 
 ## **Acknowledgements**
 

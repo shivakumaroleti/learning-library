@@ -1,6 +1,4 @@
-# Connecting OAC to ADW and adjusting Data Set properties 
-
-![Oracle ADW + 0racle OAC](./images/adw_oac_banner.png)
+# Connecting OAC to ADW and adjusting Data Set properties
 
 ## Introduction
 
@@ -8,24 +6,31 @@
 
 You are going to use an **Oracle Analytics Cloud** instance to give your end users a self-service approach to analyzing the data.
 
-    Estimated Lab Time: 20 minutes
+_Estimated Lab Time:_ 20 minutes
+
+![Oracle ADW + 0racle OAC](./images/adw_oac_banner.png)
+
 ### Objectives  
-- **Load data to your ADW instance**
+
+- **Load data** to your ADW instance
 - **Create a connection** from Oracle Analytics Cloud to Autonomous Database
-- **Create a Data Set**
+- **Create** a **Data Set**
+
 ### Prerequisites  
+
 * An Oracle Cloud Free Tier or Paid
 * You have completed  
-  - ["Lab 1: Provisioning your Autonomous Database instance"]("../../provision-adw/provision-adw.md")  
-  - ["Lab 2: Provisioning your Oracle Analytics Cloud instance"]("../../provision-oac/provision-oac.md")
+    * Lab 1: Provisioning your Autonomous Database instance  
+    * Lab 2: Provisioning your Oracle Analytics Cloud instance
 
 ## **STEP 1**: Load data to your Autonomous Database
-1. ### Connet to your Autonomous Database  
-In the ADWH console, lets navigate to the Development tab and open the SQL Developer Web  
+
+1. Connect to your Autonomous Database  
+    In the ADWH console, lets navigate to the Development tab and open the SQL Developer Web  
 
 2. In the **Oracle Console Home** Page, click on the hamburger **MENU** link at the upper left corner of the page and go to the ****Autonomous Data Warehouse**** section.  
-![Oracle Console SignIn](../provision-adw/images/lab100_1a.png)
- - You can see all the **ADW** instances that you have **created**.  
+    ![Oracle Console SignIn](../provision-adw/images/lab100_1a.png)
+    - You can see all the **ADW** instances that you have **created**.  
  **Select** the instance that we created before.  
  ![ADW databases list](./images/lab300_2a.png)
 
@@ -35,13 +40,14 @@ You can access to the '***Autonomous Database Details***' page using the cloud c
 ![ADW DB Console](./images/lab300_3a.png)  
    - This will open a new window. Click **Open SQL Developer Web** and then enter your **Username / Password**.  
    ![SQL Developer Web](./images/lab300_3b.png)  
-   - Download the [starter file](files/starter-file.sql) SQL code, _Copy_ the content and _Paste_ to _SQL Developer Web_ worksheet.  
+   - Download the [starter file](https://objectstorage.us-ashburn-1.oraclecloud.com/p/c_PgI7AIzbn3bkEkqbZAhAUuNjMVw2KE6dvITNOtj9AVRJ_sNiCub6nRaR2kJApp/n/idbwmyplhk4t/b/LiveLabs/o/starter-file.sql) SQL code, _Copy_ the content and _Paste_ to _SQL Developer Web_ worksheet.  
    ![SQL Developer Web worksheet](./images/lab300_3c.png)    
    Click **Run Script** ![SQL Developer Web worksheet] ![Run Script](./images/lab300_3d.png)
     - Check 'Script Output'  
     ![Run Script](./images/lab300_3esmall.png)
     - Go to **Navigator** and search for DCA_SALES_DATA table
     ![Run Script](./images/lab300_3fsmall.png)
+
 ## **STEP 2**: Create the connection from Oracle Analytics Cloud to Autonomous Database
 
 **Oracle Autonomous Database** only accepts secure connections to the database. This requires a *'wallet'* file that contains the SQL\*NET configuration files and the secure connection information. Wallets are used by client utilities such as SQL Developer, SQL\*Plus etc. For this workshop, you will use this same wallet mechanism to make a connection from OAC to the **Autonomous Database**.
@@ -101,6 +107,7 @@ You can access to the '***Autonomous Database Details***' page using the cloud c
     ![Connection Creation - ADW - WORKSHOPADWOAC](./images/oaccreateconnection2.png)
 
 5. Select **Save** to save your new connection **information**.
+
 ## **STEP 3**: Create and Adjust the dataset
 
 When you create a project, you add one or more **Data Sets** containing the data that you want to **visualize and explore**. Data sets contain data
@@ -130,7 +137,7 @@ Now lets create a Data Set using the ADWH connection just created. And lets sele
     Based on the data we have a number of 8 recommendations based on SALES_DATE column.
 
 4. Adjusting Data Set properties
-    
+
    4.1 Lets change the property of **CUST_ID** to Attribute.  
    Select (click) **CUST_ID** column go to Properties Pane from down left, General ![OAC - Sales](./images/createdataset6.png) and change (click) **Treat As** from Measure to Attribute  
    ![CUST_ID](./images/createdataset5.png)
@@ -140,13 +147,13 @@ Now lets create a Data Set using the ADWH connection just created. And lets sele
    Select (click) **Loyalty_ID** column
    Go to Loyalty_ID **options** ![Loyalty_ID](./images/renameloyaltyid0.png) > Click and select **Rename** 
    ![Loyalty_ID](./images/renameloyaltyid.png) 
-   
+
    In the dialog box type in Name "**# Customers**" and Click **Add Step** button  
    ![# Customers](./images/addstep.png) 
 
    4.3 Change Aggregation from Sum to Count Distinct 
    Select (click) **# Customers** go to General Property Pane > **Aggregation** > Select **Count Distinct**  
-   ![Count Distinct](./images/countdistinct.png)    
+   ![Count Distinct](./images/countdistinct.png)
 
    4.4 Lets extract week from the Sales Date column and rename it appropriate.  
    Select (click) **SALES_DATE** column, go to Options > Extract > Week  
@@ -163,10 +170,9 @@ Now lets create a Data Set using the ADWH connection just created. And lets sele
    In Preparation **Script Pane** click **Apply Script**  to apply the property changes to the Data Set.  
    ![Apply Script](./images/applyscriptresize.png)
 
-
 You have just finished to Load and Prepare your data.
 
-**This concludes this lab. Please proceed to the next lab in the Content menu.**
+You may now [proceed to the next lab](#next)
 
 ## Want to Learn More? 
 - Free [Udemy: Modern Data Visualization with Oracle Analytics Cloud](https://www.udemy.com/augmented-analytics/), Section 3: Data Preparation and Augumented Data Enrichment 
@@ -179,6 +185,7 @@ You have just finished to Load and Prepare your data.
 - **Last Updated By/Date** - Lucian Dinescu, January 2021
 
 ## Need Help?
+
 Please submit feedback or ask for help using our [LiveLabs Support Forum](https://community.oracle.com/tech/developers/categories/livelabsdiscussions). Please click the **Log In** button and login using your Oracle Account. Click the **Ask A Question** button to the left to start a *New Discussion* or *Ask a Question*.  Please include your workshop name and lab name.  You can also include screenshots and attach files.  Engage directly with the author of the workshop.  
 Please contact us at  analyticsenablement_us_grp@oracle.com for any suggestions or challenges you might have with **Oracle Analytics** labs.
 
