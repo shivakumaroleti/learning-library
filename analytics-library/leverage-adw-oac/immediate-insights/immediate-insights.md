@@ -5,7 +5,7 @@
 When creating a Project out of a Data Set, you'll see a blank canvas.  
 We are going to avoid the _blank canvas syndrome_  using **Explain**. Explain uses machine learning (**ML**) to find useful insights about your data. 
 
-Estimated Lab Time: 25 minutes
+_Estimated Lab Time:_ 25 minutes
 
 ![Explain](./images/explain0.png)
 

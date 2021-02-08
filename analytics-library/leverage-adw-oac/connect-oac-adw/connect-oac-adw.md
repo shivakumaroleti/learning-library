@@ -30,9 +30,10 @@ _Estimated Lab Time:_ 20 minutes
 
 2. In the **Oracle Console Home** Page, click on the hamburger **MENU** link at the upper left corner of the page and go to the ****Autonomous Data Warehouse**** section.  
     ![Oracle Console SignIn](../provision-adw/images/lab100_1a.png)
-    - You can see all the **ADW** instances that you have **created**.  
- **Select** the instance that we created before.  
- ![ADW databases list](./images/lab300_2a.png)
+    
+    You can see all the **ADW** instances that you have **created**.  
+    **Select** the instance that we created before.  
+    ![ADW databases list](./images/lab300_2a.png)
 
 
 3. On the "***Autonomous Database Details***" page for your Autonomous Database, click the **Tools** region.  

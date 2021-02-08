@@ -4,7 +4,7 @@
 
 In this lab, you will explore capabilities available for your Autonomous Data Warehouse (ADW) using Database Service Console, you use ad-hoc scaling up of ADW for optimal Oracle Analytics Cloud (OAC) experience and check OAC query logs looking for the Logical and Physical SQL.
 
-Estimated Lab Time: 40 minutes
+_Estimated Lab Time_: 40 minutes
 
 ![ADW Monitor](../monitor-adw/images/ociadwhmonitor.png)
 

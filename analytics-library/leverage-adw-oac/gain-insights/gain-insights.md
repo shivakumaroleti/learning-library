@@ -4,22 +4,22 @@
 
 After you ask your business question(s) and get  automated generated visual(s), you are going to explore the visual and gain additional insights with Advanced Analytics.
 
-Estimated Lab Time: 20 minutes
+_Estimated Lab Time:_ 20 minutes
 
 ![Gain Insights](./images/gaininsights.png)
 
 ### Objectives
 
-- Gain Insights with Visuals
-- Use Advanced Analytics
+- **Gain Insights** with Visuals
+- Use **Advanced Analytics**
 
 ### Prerequisites
 
 - An Oracle Cloud Free Tier or Paid
 - You have completed  
-Lab 1: Provisioning your Autonomous Database instance  
-Lab 2: Provisioning your Oracle Analytics Cloud instance  
-Lab 3: Connecting OAC to ADW and adjusting Data Set properties
+    Lab 1: Provisioning your Autonomous Database instance  
+    Lab 2: Provisioning your Oracle Analytics Cloud instance  
+    Lab 3: Connecting OAC to ADW and adjusting Data Set properties
 
 ## **STEP 1**: Gain Insights with Visuals
 

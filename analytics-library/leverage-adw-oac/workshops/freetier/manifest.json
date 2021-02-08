@@ -37,6 +37,14 @@
       "title": "Lab 7: Monitoring and Ad-hoc scaling up ADW activity for optimal OAC experience",
       "filename": "../../monitor-adw/monitor-adw.md"
     },
+  	{
+      "title": "Lab 8: Building simple Interactive Analysis",
+      "filename": "../../build-analysis/build-analysis.md"
+    },
+    {
+      "title": "Lab 9: Mashing up additional Data Sets, Contextual Data Preparation",
+      "filename": "../../mash-datasets/mash-datasets.md"
+    },
     {
       "title": "Next Steps",
       "filename": "../../next/next.md"
