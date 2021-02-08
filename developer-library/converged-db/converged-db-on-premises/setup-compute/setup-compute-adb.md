@@ -7,6 +7,9 @@ The compute image has two docker images running the eShop application.  The dock
 
 *Estimated Lab Time:* 15 minutes
 
+Watch the video below for an overview of Lab 2: Setup Compute and Autonomous DB
+[](youtube:mAUXpP-ekWY)
+
 ### About Terraform and Oracle Cloud Resource Manager
 For more information about Terraform and Resource Manager, please see the appendix below.
 
@@ -156,6 +159,7 @@ If you encountered any issues during the lab, follow the steps below to resolve 
 - Limits Exceeded
 - Invalid public key
 - Flex Shape Not Found
+- Permission Denied during Login
 
 ### Issue 1: Invalid public key
 ![](images/invalid-ssh-key.png  " ")
