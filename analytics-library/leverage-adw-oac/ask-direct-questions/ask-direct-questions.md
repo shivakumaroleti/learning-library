@@ -4,7 +4,7 @@
 
 When create a **Project** out of a **Data Set**, you see a blank canvas at first.  
 You avoid _blank canvas syndrome_  using **BI Ask** to find the data and quickly visualize it.  
-Tjat's the _**Search Bar**_ on the _**OAC Home page**_.
+That's the _**Search Bar**_ on the _**OAC Home page**_.
 
 **BI Ask** (**N**atural **L**anguage **Q**uery **P**rocessing) promotes direct interactions between the users and the BI System to explicitly understand what every user is interested in.  
 It interprets semantic layer, user private data, expression library and catalog artifacts and generates on-the-fly queries – visualizations.
@@ -21,11 +21,11 @@ _Estimated Lab Time:_ 40 minutes
 
 ### Prerequisites
 
-- An Oracle Cloud Free Tier or Paid
-- You have completed  
-   Lab 1: Provisioning your Autonomous Database instance  
-   Lab 2: Provisioning your Oracle Analytics Cloud instance  
-   Lab 3: Connecting OAC to ADW and adjusting Data Set properties
+* An Oracle Cloud Free Tier or Paid
+* You have completed  
+    * Lab 1: Provisioning your Autonomous Database instance
+    * Lab 2: Provisioning your Oracle Analytics Cloud instance
+    * Lab 3: Connecting OAC to ADW and adjusting Data Set properties
 
 ## **STEP 1**: Certify and Index your Data Set
 
@@ -39,7 +39,7 @@ _Estimated Lab Time:_ 40 minutes
     ![Data](../ask-direct-questions/images/biaskconsoledata.png)
 
     1.2 Select your Data Set.  
-    From **Data** page, then **Data Sets** section identify **DCA_SALES_DATA** Data Set.
+    From **Data** page, then **Data Sets** section identify **DCA\_SALES\_DATA** Data Set.
 
     1.3 Click the **Actions menu** of the data set or right-click the Data Set, and click **Inspect**  
     ![Data Set](../ask-direct-questions/images/dataset.png)

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this lab, you will learn about plotting the data on a map and Binning.
+In this lab, you will learn about plotting the data on a map, binning, filtering and downloading the data.
 
 _Estimated Lab Time_: 20 minutes
 
@@ -36,129 +36,196 @@ Go to **Menu** and select **Delete** Visualization
     ![Delete Visualization](../geo-maps/images/delete-viz.png)
 
 2.  Expand **Customers** Data Set.  
-Select **MARITAL_STATUS** and Drag and Drop it to **SUB_CATEGORY** 
+Select **MARITAL_STATUS** and Drag and Drop it to **SUB_CATEGORY**.
 
     ![Add Marital Status](../geo-maps/images/add-maritalstatus.png)
 
 
-3.  Create Data Set.  
-Click **Create Data Set** button, Click 'Drop data file here or click to browse' area and Select the location where you've copied 'customers.xlsx' file.
+3.  Check the new visualization.  
+Still difficult to interpret.
 
-    ![Add Data Set](../geo-maps/images/add-dataset2.png)
+    ![Add Data Set](../geo-maps/images/add-maritalstatus2.png)
 
-4.  Lets change the properties of the Data Set.  
-Set **CUST_ID** as an **Attribute** so that we can join to our existing Data Set.  
-Click on **CUST_ID** column, go to **General Property Pane** from bottom left, click on the default 'Match' properties from **Treat As** General Properties and change to **Attribute**.
+4.  Lets analyze by **Age**.  
+Select **AGE** and Drag and Drop it to **MARITAL_STATUS**.
 
-    ![Treat As Attribute](../geo-maps/images/prepscript-custidasattribute.png)
+    ![Age](../geo-maps/images/replacewithage.png)
 
-5.  Set **AGE** column as an **Attribute**.  
-Click on **AGE** column, go to **General Property Pane** from bottom left, click on the default 'Measure' properties from **Treat As** General Properties and change to **Attribute**.
+5.  It's better, but Age is too dense and we need to bin them into **age groups**.  
+Creating a bin on Age column using _custom calculation_ is easy.  
+In the Visualize canvas navigate to the bottom of the Data Panel, right-click **My Calculation**s, and click **Add Calculation** to open the New Calculation dialog.
 
-    ![Treat As Attribute](../geo-maps/images/prepscript-ageasattribute.png)
+    ![Add Calculation](../geo-maps/images/addcalculationsmall.png)
 
-6.  Add the new Data Set.  
-Click **Add** button from top right.
+6.  **Add Calculation**.  
+Enter Name **Age Bin**; In the expression builder pane, compose and edit an expression
+'BIN (AGE INTO 6 BINS RETURNING RANGE_LOW)', Click **Validate**, Click **Save**.
 
-    ![Add Data Set](../geo-maps/images/add-dataset3.png)
+    ![Add Calculation](../geo-maps/images/addcalculation2small.png)
 
-7.  Recommendations on columns are available for the new Data Set as well.  
-Lets enhance the city column with population.  
-Select **CITY** column and choose **Enhance CITY with Population** from recommendations.
+7.  Replace **AGE** from Grammar Panel, Color section with the new calculated data element **Age Bin**.  
+Select **Age Bin** from My Calculations Drag and Drop it to **AGE**.
 
-    ![Enhance City with Population](../geo-maps/images/prepscript-enhancewithpopulation.png)
+    ![Age Bin](../geo-maps/images/replaceagewitagebinsmall.png)
 
-8.  Lets **group** **Income** into **3 bins**.  
-_Below 70_ in one group, _70-130_ in another and the last group in _Above 130_.  
-Select **INCOME_LEVEL** column, go to **Options** and Click **Group**.
+8.  Using the new Age Bin column shows that we are losing customers in the older age group.
 
-    ![Group](../geo-maps/images/prepscript-group.png)
+    ![Age Bin](../geo-maps/images/replaceagewitagebin2.png)
 
-9.  First group **Below 70**.  
-Type **Below 70** (instead of Group 1) and select A, B and C.
+9.  Lets further analyze by **Gender** .  
+Drag **GENDER** to the **Trellis Rows**.
 
-    ![Below 70](../geo-maps/images/prepscript-group1.png)
+    ![Gender](../geo-maps/images/addgendersmall.png)
 
-10.  Add first group. 
-Click on '+' sign
+10.  Further analyzing by Gender shows that we are losing **Male** customers in the older age group.
 
-     ![Add 1st Group](../geo-maps/images/add-group.png)
+     ![Male](../geo-maps/images/addgender2.png)
 
-11.  Add second group.  
-Type **From 70 to 130**  (instead of Group 2)  and select D, E and F
+11.  Lets analyze by Income Group.  
+Drag **Income Group** to **Trellis Columns**
 
-     ![From 70 to 130](../geo-maps/images/prepscript-group2.png)
+     ![Income Group](../geo-maps/images/replacewithincomegroup.png)
 
-12.  Add second group.  
-Click on '+' sign
+12.  More so in the higher Income Group.  
 
-     ![Add 2nd Group](../geo-maps/images/add-group2.png)
+     ![Income Group](../geo-maps/images/replacewithincomegroup2.png)
 
-13.  Add third group.  
-Type **Above 130**  (instead of Group 3), select **Add All**.
+13.  Add Income Group **Filter**.  
+Select **Income Group** from Data Elements Panel, Right-Click and Select **Filter**.
 
-     ![Above 130](../geo-maps/images/prepscript-group3.png)
+     ![Filter Income Group](../geo-maps/images/filterincomegroupsmall.png)
 
-14. Type **Income Group** to Name, Click **OK** and Click **Add Step**.
+14. Select **Above 130**.  
+Click **Above 130** to move to the Selections. Click anywhere in the Filter are.
 
-     ![Add Income Group](../geo-maps/images/prepscript-group4.png)
+     ![Above 130](../geo-maps/images/filterincomegroup2small.png)
 
-14. Apply Script to activate the changes.  
-Click **Apply Script**.
+14. More so in the higher Income Group.
 
-     ![Apply Script](../geo-maps/images/apply-script.png)
+     ![Higher Income Group](../geo-maps/images/replacewithincomegroup3.png)
 
-## **STEP 2**: Join the Data Sets
+## **STEP 2**: Geo Visual
 
-When you add more than one data set to a project, the system tries to find matches for the data that’s added. It automatically matches external dimensions where they share a common name and have a compatible data type with attributes in the existing data set.  
-Lets join the Data Sets using **CUST_ID** as the join condition between the data sets.
+You can use geographical information to enhance the analysis of your data
+Lets create a geo visual using state and customers and use it as a filter for other visuals.
 
-1.  Go to **Data Diagram** tab.  
-In this tab, you can view a representation of the **different datasets** included in the project and their **relationships**.  
-Click on **Data Diagram** tab
+1.  Pick Visualization.  
+Select **# Customers** and **STATE** from Data Elements Panel, Right Click and Select **Pick Visualization** 
 
-    ![Data Diagram](../geo-maps/images/datadiagram.png)
+    ![Pick Visualization](../geo-maps/images/newvizsmall.png)
 
-2.  **Connect** Data Sets.  
-Currently, there is no relationship defined, so you see both as isolated boxes.  
-Hover the mouse  over the imaginary line **between** the two Data Sets and click on the **0 number** that will appear.
+2.  Select **Map**.  
 
-    ![Connect Data Sets](../geo-maps/images/datadiagram-join.png)
+    ![Map](../geo-maps/images/newvizmapsmall.png)
 
 
-3.  **Blend Data** Sets.  
-A **pop-up window** appears allowing you to define a **new relation** between the datasets (join).  
-Click on **Add Another Match** button.
+3.  Use Map Visualization as a Filter.  
+Select **Map Visualization**, Right Click and Select **Use as Filter**.
 
-    ![Blend Data Sets](../geo-maps/images/datadiagram-blend1.png)
+    ![Map Use as Filter](../geo-maps/images/newvizmapuseasfilter.png)
 
-4.  **Blend Data** Sets.  
-Select **CUST_ID**column from both Data Sets.
+4.  Narrow down to California.  
+Click on **California** State.
 
-    ![Blend Data Sets](../geo-maps/images/datadiagram-blend2.png)
+    ![California](../geo-maps/images/newvizmapuseasfilterca.png)
 
-5.  Lets extend the new Data Set as a dimension as the mashup data set doesn't contain any metrics.  
-Click **Add Facts** and select **Extend a Dimension**.
+5.  Filter to **Kentucky**.  
+Click on **KY** State.
 
-    ![Extend a Dimension](../geo-maps/images/datadiagram-blend3.png)
+    ![KY](../geo-maps/images/newvizmapuseasfilterky.png)
 
-6.  Click **OK** button.
+6.  It's easy to create a custom filter by **drawing a polygon** on the map and select certain points.  
+On the Visualization Toolbar, Click the **Polygon Selection** tool and drag a freehand border around the points or area you want to select on the map
 
-    ![OK](../geo-maps/images/datadiagram-blend4.png)
+    ![Polygon](../geo-maps/images/newvizmapuseasfilterpolygon.png)
 
-7. Click **Visualize** tab
+7.  Draw the Polygon as you see in the image below.
 
-    ![Visualize](../geo-maps/images/visualize.png)
+    ![Polygon](../geo-maps/images/newvizmapuseasfilterpolygon1.png)
 
-You have just finished learning about data mash-up and various options to connect Data Sets.
+8.  Lets rename the canvas as **Demographics** and create a **Duplicate** of the canvas.  
+
+    ![Demographis](../geo-maps/images/canvasrenamedemographicssmall.png) ![Duplicate Canvas](../geo-maps/images/canvasrenameduplicatesmall.png)
+
+9. Add **Gender** to the **Filter**.  
+Select **Gender** Drag and Drop to Filter Area.
+
+    ![Gender Filter](../geo-maps/images/filtergender.png)
+
+10. Select Male.  
+Click **M** to move Male to the Selections and click anywhere in the Filter Area.
+
+    ![M](../geo-maps/images/filtergender1small.png)
+
+11. Add **Gender** to the **Filter**.  
+Select **Gender** Drag and Drop to Filter Area.
+
+    ![Gender Filter](../geo-maps/images/filtergender.png)
+
+12. Move Map Visualization to the top.  
+**Rearrange** a visualization on the canvas using drag and drop to a space between visualizations where you want to place it. The **target drop area** is displayed with a **blue outline**.
+Select **STATE # Customers** visualization and Drag it to the top of the Canvas.
+
+    ![Move Map Visualization](../geo-maps/images/moveviztotop.png)
+
+
+13. Lets create a detailed tabular report.  
+Select: **CUST_ID, FIRST_NAME, LAST_NAME, GENDER, AGE, ZIPCODE, CITY, STATE**, Right Click  and Select **Pick Visualization**.
+
+    ![Pick Visualization](../geo-maps/images/pickvizsmall.png)
+
+14. Select **Table**.
+
+    ![Table Visualization](../geo-maps/images/pickviztablesmall.png)
+
+
+15. **Resize** viz to see all the columns.  
+Resize a visualization by dragging its edges to the appropriate dimensions.
+
+    ![Resize Visualization](../geo-maps/images/pickviztableresize0.png)
+    ![Resize Visualization](../geo-maps/images/pickviztableresize.png)
+
+
+16. Switch **STATE** with **CITY**.  
+Go to Grammar Panel Rows section click **STATE** and and dropping it over **CITY**.
+
+    ![Swap Data Elements](../geo-maps/images/pickviztableswitchstate1.png)
+
+
+17. Use Map as a filter.  
+Select the Map visualization, Right Click and Select **Use as Filter**.
+
+    ![Map Use as Filter](../geo-maps/images/statecustomersuseasfilter.png)
+
+18. Filter for **Florida**.  
+Click on **FL**.
+
+    ![FL Filter](../geo-maps/images/statecustomersuseasfilterfl.png)
+
+19. Export the Table visualization.  
+Select Table visualization, go to **Export** icon on top right and select **File**.
+
+    ![Export](../geo-maps/images/exporttabel.png)
+
+20. In the pop-up window Select **Format** as **Data (csv**).
+
+    ![Export](../geo-maps/images/exporttabel2small.png)
+
+21. Check the downloaded csv file.  
+Notice that it has been exported the entire data from the filtered table (FL)
+
+    ![Export](../geo-maps/images/exporttabel3small.png)  
+    ![Export](../geo-maps/images/exporttabel4small.png)
+
+
+You have just finished learning about geo visualization, binning, filtering and download your data.
 
 You may now [proceed to the next lab](#next)
 
 ## Want to Learn More?
 
-* [Blend Data that You Added](https://docs.oracle.com/en/cloud/paas/analytics-cloud/acubi/blend-data-that-you-added.html)
-* [About Mismatched Values in Blended Data](https://docs.oracle.com/en/cloud/paas/analytics-cloud/acubi/mismatched-values-blended-data.html)
-* [Change Data Blending in a Project](https://docs.oracle.com/en/cloud/paas/analytics-cloud/acubi/change-data-blending-project.html)
+* Free [Udemy: Modern Data Visualization with Oracle Analytics Cloud](https://www.udemy.com/augmented-analytics/), Section 5: Advanced Visualization to Generate Deeper Insights  
+* [Visualize Data](https://docs.oracle.com/en/cloud/paas/analytics-cloud/acubi/visualize-data.html)
 
 ## **Acknowledgements**
 

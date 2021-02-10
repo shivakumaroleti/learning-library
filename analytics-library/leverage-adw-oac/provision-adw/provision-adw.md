@@ -27,9 +27,9 @@ Watch our short video that explains Lab 1 - Provisioning your Autonomous Databas
 
 [](youtube:rpKwrm-7eCk)
 
-Estimated Lab Time: 15 minutes
+_Estimated Lab Time:_ 15 minutes
 
-### Objectives 
+### Objectives
 - Create an Autonomous Database with the latest features of Oracle Databases
 
 ## **STEP 1**: Create a new Autonomous Data Warehouse Database
@@ -43,8 +43,9 @@ Estimated Lab Time: 15 minutes
 
     [You can learn more about compartments in this link](https://docs.cloud.oracle.com/en-us/iaas/Content/Identity/Tasks/managingcompartments.htm).
 
-2. To create a new instance, click the blue **Create Autonomous Database** button.  
-![Create ADB](./images/lab100_2small.png)
+2. To create a new instance, click the blue **Create Autonomous Database** button.
+
+    ![Create ADB](./images/lab100_2small.png)
 
     Enter the required information and click the **Create Autonomous Database** button at the bottom of the form. For the purposes of this workshop, use the information below:
 
@@ -55,20 +56,19 @@ Estimated Lab Time: 15 minutes
      > **Display Name:** Enter the display name for your ADW Instance. Use a user-friendly name to help you easily identify the resource. You can leave the name provided. That field is not a mandatory one.
 
     > **Database Name:** Enter any database name you choose that fits the requirements for ADW. The database name must consist of letters and numbers only, starting with a letter. The maximum length is 14 characters. For this demo purpose, I have called my database **ADWH**.
-
-    >
+  
     > **Workload Type:** Autonomous Data Warehouse  
     >
     > **Deployment Type:** Shared Infrastructure
     >
     > **Always Free:** Off
----
-   > **Not recommended for this lab**, but you can select Always Free configuration to start enjoying your Free Autonomous Database.  
-     With Free you cannot scale the database so you'll not be able to follow all the labs from this workshop.
-    You will have see the Always Free logo next to the name of your database: ![Always Free Logo](./images/always_free_logo.png)  
-    [If you select 'Always Free Tier On', please check the following link](https://www.oracle.com/uk/cloud/free/#always-free).
----
-   ![ADB Creation Details](./images/lab100_3a.png)
+    
+      - **Not recommended for this lab**, but you can select Always Free configuration to start enjoying your Free Autonomous Database.  
+       With Free you cannot scale the database so you'll not be able to follow "**_Lab 7: Monitoring and Ad-hoc scaling up ADW activity for optimal OAC experience_**".
+      
+        [If you select 'Always Free Tier On', please check the following link](https://www.oracle.com/uk/cloud/free/#always-free).
+
+      ![ADB Creation Details](./images/lab100_3a.png)
 
    > **Choose Database version:** 19c
    >
@@ -123,9 +123,10 @@ You may now [proceed to the next lab](#next)
 
 - **Author** - Lucian Dinescu, Product Strategy, Analytics
 - **Contributors** - Priscila Iruela, Database Business Development | Juan Antonio Martin Pedro, Analytics Business Development Victor Martin, Melanie Ashworth-March, Andrea Zengin
-- **Last Updated By/Date** - Lucian Dinescu, January 2021
+- **Last Updated By/Date** - Lucian Dinescu, February 2021
 
 ## Need Help?
+
 Please submit feedback or ask for help using our [LiveLabs Support Forum](https://community.oracle.com/tech/developers/categories/livelabsdiscussions). Please click the **Log In** button and login using your Oracle Account. Click the **Ask A Question** button to the left to start a *New Discussion* or *Ask a Question*.  Please include your workshop name and lab name.  You can also include screenshots and attach files.  Engage directly with the author of the workshop.  
 Please contact us at  analyticsenablement_us_grp@oracle.com for any suggestions or challenges you might have with **Oracle Analytics** labs.
 
