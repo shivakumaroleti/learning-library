@@ -5,7 +5,7 @@
 
 ## Introduction
 
-The following hands-on workshop will walk users through connecting **Oracle Analytics Cloud (OAC)** to **Oracle Autonomous Database (ADB)**, getting immediate valuable insight out of your ADW data, scaling up ADB database to optimize OAC performance, deepening analysis by mashing-up additional data and leveraging OAC interactive visualization features.
+The following hands-on workshop will walk through users connecting **Oracle Analytics Cloud (OAC)** to **Oracle Autonomous Database (ADB)**, getting immediate valuable insight out of your ADW data, scaling up ADB database to optimize OAC performance, deepening analysis by mashing-up additional data and leveraging OAC interactive visualization features.
 
 This workshop is based on "**OAC+ADW Workshop**" from [Oracle Analytics Library](https://www.oracle.com/business-analytics/data-visualization/tutorials.html), Tutorials tab.
 
